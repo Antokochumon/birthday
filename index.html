@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Pappa!</title>
+  <style>
+    /* General Styles */
+    body {
+  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg,#ff8ccf, pink, rgb(255, 141, 227));
+  animation: man 2s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  /* overflow: hidden; */  /* Remove or change this */
+  overflow-y: auto;  /* Allow vertical scrolling */
+  position: relative;
+}
+@keyframes man {
+      0% { background-position: 0% 50%;}
+      50% { background-position: 100% 50%;}
+      100% { background-position: 80% 130% 50%;}
+    }
+
+
+
+
+    .container {
+      text-align: center;
+      background: linear-gradient(135deg, white,rgb(255, 224, 253), white );
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 10px rgb(71, 71, 71);
+      max-width: 600px;
+      width: 90%;
+      position: relative;
+      z-index: 2;
+      color: #333;
+      animation: slideIn 1.8s ease-in-out;
+    }
+ 
+
+
+    .title {
+      font-size: 3rem;
+      text-shadow: 0px 3px 5px #ff6699;
+      color: #ff6699;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .media-container {
+      margin: 20px 0;
+    }
+
+    .pappa-image {
+      width: 280px;
+      height: 300px;
+      border-radius: 50%;
+      border: 5px solid #ff6699;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 15px rgba(255, 105, 180, 0.8);
+      animation: glow 1.3s infinite alternate;
+    }
+
+    .birthday-video {
+      width: 80%;
+      height:400px;
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px black;
+    }
+
+    .wish-button {
+      background: #ff6699;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.5s ease;
+    }
+
+    .wish-button:hover {
+      background: #cc3366;
+    }
+
+    .special-wish {
+      font-size: 1.3rem;
+      margin-top: 20px;
+      color: #ff6699;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .birthday-declaration {
+      font-size: 16px;
+      font-weight:600;
+      
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 6px 20px rgba(255, 105, 180, 0.5); }
+      to { box-shadow: 0 0px 20px rgba(255, 105, 180, 1); }
+    }
+
+    
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  /* Balloon Animation */
+.balloons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.balloon {
+  position: absolute;
+  bottom: -100px; /* Start below the screen */
+  width: 50px;
+  height: 70px;
+  background-color: red;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: floatUp 10s linear infinite;
+}
+
+.balloon:nth-child(1) { left: 10%; animation-duration: 6s; background-color: #ff6666; }
+.balloon:nth-child(2) { left: 30%; animation-duration: 4.5s; background-color: #ffcc66; }
+.balloon:nth-child(3) { left: 50%; animation-duration: 5.5s; background-color: #66ff66; }
+.balloon:nth-child(4) { left: 70%; animation-duration: 6.5s; background-color: #6699ff; }
+.balloon:nth-child(5) { left: 90%; animation-duration: 4s; background-color: #cc66ff; }
+.balloon:nth-child(6) { left: 20%; animation-duration: 2s; background-color: orange; }
+
+
+
+/* Image Container */
+.image-container {
+      margin: 20px auto;
+      max-width: 300px;
+      border-radius: 30px;
+      padding: 10px;
+      background: linear-gradient(90deg, red, green, orange, blue ,aqua, pink);
+      background-size: 400% 400%;
+      animation: glow 5s ease infinite;
+      box-shadow: 0 0 30px rgb(0, 0, 0);
+      position: relative;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 30px;
+    }
+    @keyframes glow {
+      0% { background-position: 0% 50%;}
+      20% { background-position: 50% 50%;}
+      50% { background-position: 100% 50%;}
+      70% { background-position: 100% 50%;}
+      100% { background-position: 80% 130% 50%;}
+    }
+
+    /* Floating Hearts */
+    .floating-heart {
+      position: absolute;
+      font-size: 1.5em;
+      color: #ff4081;
+      animation: float 7s infinite ease-in-out;
+      opacity: 0.8;
+    }
+
+    .floating-heart:nth-child(2) { top: -10px; left: -20px; animation-duration: 2s; }
+    .floating-heart:nth-child(3) { bottom: -10px; right: -20px; animation-duration: 5s; }
+    .floating-heart:nth-child(4) { top: 90%; left: 20px; animation-duration: 7s; }
+    .floating-heart:nth-child(5) { top: 0%; right: 0px; animation-duration: 3s; }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-35px); }
+      100% { transform: translateY(0px); }
+    }
+
+
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 90; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+
+    @media (min-width: 1024px) {
+      .container {
+        max-width: 800px;
+      }
+      .title {
+        font-size: 3.5rem;
+      }
+      .footer{
+      position: absolute;
+      top: 100%;
+      left: 10px;
+    }
+    }
+
+
+
+    .footer{
+      position: absolute;
+      top: 100%;
+      left: 40%;
+      color: black;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Happy Birthday Pappa</h1>
+    <div class="birthday-declaration"><span style="color:red;">🎉🎂</span> Let's Celebrate!  <span style="color:red;">🎉🎂</span></div>
+    <div class="media-container">
+     
+      <div class="image-container">
+        <img src="images/pappa.jpg" alt="Anniversary Image">
+        <div class="floating-heart">❤️</div>
+        <div class="floating-heart">❤️</div>
+        <div class="floating-heart">❤️</div>
+        <div class="floating-heart">❤️</div>
+      </div>
+
+
+
+      <br>
+      <br>
+      <br>
+      <video controls class="birthday-video">
+        <source src="images/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <button class="wish-button" onclick="showMessage()">Click here</button>
+    <p id="special-wish" class="special-wish"></p>
+  </div>
+  
+<div class="balloons">
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+</div>
+
+<div class="footer">
+  <p>Designed and Developed by <span style="color:#ff4081;">Anto kochumon</span></p>
+</div>
+
+
+  <audio id="birthday-music" loop>
+    <source src="images/Birthday music.mp4" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Function to show the special wish
+    function showMessage() {
+      document.getElementById('special-wish').textContent = "❤️ Wishing you a day filled with love and joy. ❤️";
+    }
+
+    // Function to play audio after user interaction
+    document.addEventListener("click", function() {
+      var audio = document.getElementById("birthday-music");
+      audio.play().then(() => {
+        console.log("Music is playing!");
+      }).catch(error => {
+        console.log("Autoplay was blocked. Please interact with the page to play music.");
+      });
+    });
+  </script> 
+  
+  
+   
+  
+  
+  
+
+</body>
+</html>
+
+
+
+<!--<img src="images/pappa.jpg" alt="Pappa's Image" class="pappa-image">
